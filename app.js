@@ -72,6 +72,20 @@ const maxIndex = personData.findIndex((person, idx, persons) => {
 
 console.log(maxIndex);
 */
+const prices = [10.99, 5.99, 3.99, 6.59];
+const tax = 0.19;
+const taxAdjustedPrice = [];
+
+//for (const price of prices) {
+//	taxAdjustedPrice.push(price * (1 + tax));
+//}
+
+prices.forEach((price, idx, prices) => {
+	const priceObj = {index: idx, taxAdjPrice: price * (1 + tax)};
+	taxAdjustedPrice.push(priceObj);
+});
+
+console.log(taxAdjustedPrice);
 
 
 
