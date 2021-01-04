@@ -4,7 +4,7 @@ ids.delete('hi');
 
 for (const entry of ids.entries()) {
 	console.log(entry);
-}*/
+}
 
 const person1 = {name: 'max'};
 const person2 = {name: 'manuel'};
@@ -27,6 +27,26 @@ for (const value of personData.values()) {
 for (const keys of personData.keys()) {
 	console.log(keys);
 }
+*/
+
+let person = {name: 'Max'};
+const persons = new WeakSet();
+persons.add(person);
+
+// ... some operations
+person = null;
+
+console.log(persons);
+
+const personData = new WeakMap();
+personData.set(person, 'Extra info!');
+
+person = null;
+
+console.log(personData);
+
+
+
 
 
 
