@@ -42,7 +42,7 @@ console.log(hobbies);
 
 const removedElements = hobbies.splice(-2, 1);
 console.log(hobbies);
-*/
+
 const testResults = [1, 5.3, 1.5, 10.99, -5, 10];
 //const storedResults = testResults.slice(2);
 const storedResults = testResults.concat([3.99, 2]);
@@ -51,6 +51,9 @@ testResults.push(5.91);
 
 console.log(testResults, storedResults);
 console.log(testResults.indexOf(1.5));
+
+console.log(testResults.includes(10.99));
+console.log(testResults.includes(10.99) !== -1);
 
 const personData = [{name: 'Max'}, {name: 'Manuel'}];
 console.log(personData.indexOf({ name: 'Manuel'}));
@@ -68,7 +71,7 @@ const maxIndex = personData.findIndex((person, idx, persons) => {
 });
 
 console.log(maxIndex);
-
+*/
 
 
 
